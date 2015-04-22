@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSONpractice</title>
+    <script src= "bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="product-json-api" type="text/x-handlebars-template">
+      {{#each this}}
+      <li>{{name}}</li>
+      <li>{{description}}</li>
+      <li>{{price}}</li>
+      {{/each}}
+    </script>
+    <div id = "thing">
+    </div>
+  </body>
+</html>
